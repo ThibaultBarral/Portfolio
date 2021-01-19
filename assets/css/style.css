@@ -2,6 +2,10 @@
 @import url(reboot.css);
 @import url(responsive.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
