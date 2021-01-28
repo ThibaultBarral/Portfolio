@@ -65,11 +65,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 #home {
-    background-image: url("/assets/media/images/Channel-Art-lifestyle.png");
+    background-image: url("../media/images/Channel-Art-lifestyle.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
