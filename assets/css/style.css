@@ -58,7 +58,7 @@ section {
 }
 
 .active a {
-    color: #707070;
+    color: white;
 }
 
 header {
@@ -204,28 +204,36 @@ footer .padd-around p {
 /*=============================================================
                             BLOC
 =============================================================*/
-#bloc1 {
-    background-color:  #707070;
-}
-
-#bloc2 {
-    background-color: #707070;
-}
-
-#bloc3 {
-    background-color: #707070;
-}
-
 #bloc1, #bloc2, #bloc3 {
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
+    background-color: #707070;
+}
+
+/*=============================================================
+                            PORTFOLIO
+=============================================================*/
+#portfolio img{
+    width: 75%;
+}
+
+#portfolio h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolio p{
+    text-align: center!important;
+    margin-right: 30px!important;
+    margin-left: 30px!important;
 }
 
 /*=============================================================
                     La partie du tunning
 =============================================================*/
-.btn {
+/*.btn {
     text-decoration: none;
     padding: 13px;
     border-radius: 33px;
@@ -235,14 +243,26 @@ footer .padd-around p {
 }
 
 .btn:hover {
-    padding: 10px;
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    border: 4px solid #707070;
-    box-shadow: 1px 1px 4px #777777;
-    -webkit-box-shadow: 1px 1px 4px #777777;
-    -moz-box-shadow: 1px 1px 4px #777777;
+    padding: 12px;
+    border-radius: 42px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 42px;
+}*/
+
+.btn {
+    transition-duration: 0.4s;
+    border: 2px solid #555555;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+.btn:hover {
+    background-color: #555555;
+    color: white;
 }
 
 .reveal [class*="reveal-"] {
