@@ -204,12 +204,22 @@ footer .padd-around p {
 /*=============================================================
                             BLOC
 =============================================================*/
-#bloc1, #bloc2, #bloc3 {
+.bloc {
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
     background-color: #707070;
 }
+
+#bloc h3, p{
+    margin-bottom: 12px;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
 
 /*=============================================================
                             PORTFOLIO
