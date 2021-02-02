@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/media/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
                     <a href="#apropos">À Propos</a>
                 </li>
                 <li class="btn">
-                    <a href="">Contact</a>
+                    <a href="/contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -73,8 +74,6 @@
     <!--ESPACE section-->
     <section id="apropos" class="row wrap" style="height: 10vh;">
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
-            <div class="padd-around">
-            </div>
         </div>
     </section>
 
@@ -100,11 +99,9 @@
     <!--ESPACE section-->
     <section class="row wrap" style="height: 10vh;">
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
-            <div class="padd-around">
-            </div>
         </div>
     </section>
-    
+
     <!--Troisième section-->
     <section id="bloc" class="row wrap white reveal">
         <div class="xLarge-4 large-4 medium-12 small-12 xSmall-12 reveal-1">
@@ -113,11 +110,49 @@
                     <div class="center">
                         <h3>Compétences :</h3>
                     </div>
-                    <p>HTML / CSS</p>
-                    <p>Python</p>
-                    <p>Linux</p>
-                    <p>Git / GitHub</p>
-                    <p>VS Code</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">JS</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="10"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">Linux</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="20"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">Vs Code</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="50"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill">
+                            <div class="skill-name">Git / GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="40"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill">
+                            <div class="skill-name">Adobe XD</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="50"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,9 +162,28 @@
                     <div class="center">
                         <h3>Centres d'intérêt :</h3>
                     </div>
-                    <p>Tennis de Table</p>
-                    <p>Sciences</p>
-                    <p>Business</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">Tennis de table</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">sciences</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">Business</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="50"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +201,6 @@
     <!--ESPACE section-->
     <section class="row wrap" style="height: 10vh;">
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
-            <div class="padd-around">
-            </div>
         </div>
     </section>
 
@@ -191,8 +243,6 @@
     <!--ESPACE section-->
     <section class="row wrap" style="height: 10vh;">
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
-            <div class="padd-around">
-            </div>
         </div>
     </section>
 
@@ -231,7 +281,22 @@
     </section>
 </footer>
 
-
+<script>
+    $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+            duration: 1000,
+            step: function(){
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            },
+            complete: function(){
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            }
+        });
+    });
+</script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
