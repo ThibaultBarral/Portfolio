@@ -1,7 +1,6 @@
 @import url(fonts.css);
 @import url(reboot.css);
 @import url(responsive.css);
-@import url(contact.css);
 
 html {
     scroll-behavior: smooth;
