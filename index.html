@@ -13,8 +13,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="menu-wrap">
+<input type="checkbox" class="toggler">
+<div class="hamburger"><div></div></div>
+<div class="menu">
+    <div>
+    <div>
+        <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#apropos">À Propos</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+</div>
 
-<header>
+<header class="showcase reveal">
+    <div class="container textcenter showcase-inner">
+        <div class="reveal-1">
+            <h1>Thibault Barral</h1>
+        </div>
+        <section class="row wrap xLarge-12 large-12 medium-12 small-12 xSmall-12 center white" style="margin-top: 20px;">
+            <div class="xLarge-4 large-4 medium-12 small-12 xSmall-12">
+                <div class="reveal-3">
+                    <p>Mindset</p>
+                </div>
+            </div>
+            <div class="xLarge-4 large-4 medium-12 small-12 xSmall-12 center">
+                <div class="center  reveal-2">
+                    <p>-</p>
+                </div>
+                <div class="reveal-3">
+                    <p style="padding: 6px;" >Web Developer</p>
+                </div>
+                <div class="center  reveal-2">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="xLarge-4 large-4 medium-12 small-12 xSmall-12">
+                <div class="reveal-3">
+                    <p>Etudiant</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+
+<!--<header>
     <section class="row wrap">
         <nav>
             <div class="logo-nav padd-around">
@@ -34,11 +80,12 @@
         </nav>
     </section>
 </header>
+-->
 
 <main>
     
     <!--Première section-->
-    <section id="home" class="row wrap">
+    <!-- <section id="home" class="row wrap">
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12 center reveal">
             <div class="padd-around column center " style="color: black;">    
                 <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12 textcenter reveal-1">
@@ -73,7 +120,7 @@
                 </section>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--ESPACE section-->
     <section id="apropos" class="row wrap" style="height: 10vh;">
@@ -95,7 +142,7 @@
                         Diplômé d'un bac Scientifique, je m'intéresse aux sciences et d'autant plus aux nouvelles technologies qui nous entourent chaque jour. 
                         Etudiant en première année DevOps/SysOps à l'EPSI Bordeaux.
                     </p>
-                    <a style="font-weight: 400;" id="cv" href="assets/media/images/Curriculum Vitæ Thibault Barral.pdf" download="Curriculum Vitæ Thibault Barral.pdf">
+                    <a style="font-weight: 400; margin-top: 10px;" id="cv" href="assets/media/images/Curriculum Vitæ Thibault Barral.pdf" download="Curriculum Vitæ Thibault Barral.pdf">
                         Voici mon Curriculum vitæ
                     </a>
                 </div>
@@ -236,7 +283,7 @@
                         <a href="https://github.com/ThibaultBarral/Scuderia-Ferrari">
                             <h2>Scuderia Ferrari</h2>
                         </a>
-                        <p>Ceci est un site tourné autour de la Scuderia Ferrari réalisé en classe à partir de php et phpMyAdmin notamment</p>
+                        <p>Ceci est un site tourné autour de la Scuderia Ferrari réalisé en classe à partir de php et phpMyAdmin</p>
                     </div>
                 </div>
                 <div class="xLarge-4 large-4 medium-12 small-12 xSmall-12 reveal-3">
@@ -257,6 +304,32 @@
         <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
         </div>
     </section>
+
+    <!-- <section>
+        <div class="padd-around">
+            <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+    </section> -->
 
 </main>
 
