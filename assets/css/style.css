@@ -201,6 +201,10 @@ footer .padd-around p {
     font-weight: 300;
 }
 
+#cv:hover {
+    text-decoration: underline;
+}
+
 /*=============================================================
                             BLOC
 =============================================================*/
@@ -272,6 +276,7 @@ footer .padd-around p {
 =============================================================*/
 #portfolio img {
     width: 75%;
+    border-radius: 10px;
 }
 
 #portfolio h2 {
@@ -280,10 +285,15 @@ footer .padd-around p {
     margin-bottom: 20px;
 }
 
+#portfolio h2:hover {
+    text-decoration: underline;
+}
+
 #portfolio p {
     text-align: center!important;
     margin-right: 30px!important;
     margin-left: 30px!important;
+    line-height: 1.1em;
 }
 
 /*=============================================================
