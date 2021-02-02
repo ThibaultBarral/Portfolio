@@ -229,13 +229,13 @@ footer .padd-around p {
 }
 
 .skill-bar {
-    height: 10px;
+    height: 8px;
     background: #cacaca;
     border-radius: 8px;
 }
 
 .skill-per {
-    height: 10px;
+    height: 8px;
     background-color: #edc531;
     border-radius: 8px;
     width: 0;
