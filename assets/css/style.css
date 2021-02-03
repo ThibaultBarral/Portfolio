@@ -469,14 +469,14 @@ footer .padd-around p {
                             PORTFOLIO
 =============================================================*/
 #portfolio img {
-    width: 75%;
+    width: 90%;
     border-radius: 10px;
 }
 
 #portfolio h2 {
     text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #portfolio h2:hover {
