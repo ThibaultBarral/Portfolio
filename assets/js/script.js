@@ -18,10 +18,3 @@ const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach(function(r) {
     observer.observe(r)
 })
-
-document.querySelector('#contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-});

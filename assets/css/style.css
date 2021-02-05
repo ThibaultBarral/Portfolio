@@ -355,6 +355,13 @@ footer .padd-around p {
     font-size: 22px;
 }
 
+.linefooter {
+    margin-top: 10px;
+    height: 1px;
+    width: 90%;
+    background-color: black;
+}
+
 /*=============================================================
                             TEXT
 =============================================================*/

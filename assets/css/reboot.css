@@ -76,7 +76,7 @@ q:before, q:after {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3c3c3c;
+    background-color: #707070;
 }
 
 ::-webkit-scrollbar-thumb:hover {
