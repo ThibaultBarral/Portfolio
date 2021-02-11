@@ -100,7 +100,7 @@ main {
   
 .showcase:before {
     content: '';
-    background: url("../media/images/Channel-Art-lifestyle.png") no-repeat center center/cover;
+    background: url("../media/images/Channel-Art-lifestyle.png") no-repeat fixed center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -368,8 +368,13 @@ footer .padd-around p {
     background-color: #707070;
 }
 
-#bloc h3  p{
-    margin-bottom: 12px;
+#bloc h3 p{
+    margin-bottom: 10px;
+}
+
+h3 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .skills {
@@ -386,13 +391,13 @@ footer .padd-around p {
 
 .skill-bar {
     height: 6px;
-    background: #cacaca;
+    background: #808080;
     border-radius: 8px;
 }
 
 .skill-per {
     height: 6px;
-    background-color: #edc531;
+    background-color: whitesmoke;
     border-radius: 8px;
     width: 0;
     transition: 1s linear;
