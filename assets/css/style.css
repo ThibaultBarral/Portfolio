@@ -379,11 +379,12 @@ footer .padd-around p {
     background-color: #707070;
 }
 
-#bloc h3 p{
+#bloc h1 p{
     margin-bottom: 10px;
 }
 
-h3 {
+#bloc h1 {
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
