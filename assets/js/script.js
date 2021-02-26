@@ -18,11 +18,3 @@ const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach(function(r) {
     observer.observe(r)
 })
-
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load', () => {
-    
-    loader.classList.add('fondu-out');
-
-})
