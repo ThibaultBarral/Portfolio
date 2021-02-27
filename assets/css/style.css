@@ -532,6 +532,7 @@ footer .padd-around p {
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #prtfl ul:nth-child(2) li:nth-child(1) {
@@ -548,12 +549,35 @@ footer .padd-around p {
     margin: 0 6%
 }
 
+@media (max-width: 519px) {
+    .block {
+        display: block;
+    }
+    #prtfl ul:nth-child(1) {
+        width: 100%;
+    }
+    #prtfl ul:nth-child(2) li:nth-child(1) {
+        padding: 0;
+    }
+    #prtfl ul:nth-child(2) li:nth-child(2) {
+        padding: 0 10px;
+    }
+    #prtfl ul:nth-child(2) {
+        margin-bottom: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
 .btn {
 	border-radius:20px;
 	border:2px solid #707070;
 	display:inline-block;
 	cursor:pointer;
 	padding:6px 10px;
+    text-align: center;
 }
 .btn:hover {
 	color: white;
