@@ -502,8 +502,12 @@ footer .padd-around p {
 /*=============================================================
                             PORTFOLIO
 =============================================================*/
+#prtfl {
+    align-items: center!important;
+}
+
 #prtfl img {
-    width: 100%;
+    width: 88%;
     border-radius: 10px;
 }
 
@@ -514,10 +518,6 @@ footer .padd-around p {
     letter-spacing: 2px;
     font-size: 21px;
     font-weight: 500;
-}
-
-#prtfl {
-    margin: 0 100px!important;
 }
 
 #prtfl p {
@@ -538,23 +538,26 @@ footer .padd-around p {
     padding: 0 10px;
 }
 
+#prtfl ul:nth-child(2) li {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.margintext {
+    margin: 0 6%
+}
+
 .btn {
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
 	border-radius:20px;
-	border:2px solid #dcdcdc;
+	border:2px solid #707070;
 	display:inline-block;
 	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:16px;
-	font-weight:bold;
-	padding:6px 20px;
-	text-decoration:none;
+	padding:6px 10px;
 }
 .btn:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
+	color: white;
+    background-color: #707070;
 }
 
 /*=============================================================
