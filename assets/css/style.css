@@ -522,6 +522,7 @@ footer .padd-around p {
 
 #prtfl p {
     line-height: 1.2em;
+    text-align: justify;
 }
 
 #prtfl ul:nth-child(1) {
