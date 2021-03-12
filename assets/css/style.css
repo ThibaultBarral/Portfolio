@@ -550,6 +550,12 @@ footer .padd-around p {
     margin: 0 6%
 }
 
+@media (max-width: 1279px) {
+    #prtfl ul:nth-child(2) li {
+        font-size: 10px;
+    }
+}
+
 @media (max-width: 519px) {
     .block {
         display: block;
